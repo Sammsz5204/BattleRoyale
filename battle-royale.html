@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Battle Royale</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        #gameCanvas {
+            border: 2px solid #333;
+            background: #000;
+            display: block;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+        
+        #instructions {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="instructions">
+        WASD: Mover | Mouse: Mirar | Click: Atirar | TAB: Modo Build | Q: Construir | R: Rotacionar | E: Medkit | 1-4: Armas
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
